@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'cmd /c echo "Building..."'
+                bat '"C:\\Windows\\System32\\cmd.exe" /c echo "Building..."'
             }
         }
         stage('Test') {
             steps {
-                bat 'cmd /c echo "Testing..."'
+                bat '"C:\\Windows\\System32\\cmd.exe" /c echo "Testing..."'
             }
         }
         stage('Deploy') {
             steps {
-                bat 'cmd /c echo "Deploying..."'
+                bat '"C:\\Windows\\System32\\cmd.exe" /c echo "Deploying..."'
             }
         }
     }
